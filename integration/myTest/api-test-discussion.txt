@@ -1,0 +1,11 @@
+This part of the homework took me much longer to wrap my head around. It wasn't because the Cypress calls were any more challenging, but more so because It made me realise I was inexperienced at 
+reading and understanding APIs. I struggled for quite a while to successfully check a key's value. Everytime I would, I would end up getting an error like "Expected Undefined to equal true". 
+Eventually, I reaslied my mistake was that I was not calling the objects correctly. I was doing for example, "expect(res.body.showBetType).eq(false)",
+ instead of 
+"expect(res.body.config.settings.carousel.showBetType).eq(false)".
+
+this piece of homework has helped me understand how to work with apis much more and I feel like I have definietly learned valuable information. 
+
+Once again, I'm sure the code could be much better, or there are less flimsy and more efficient ways to go about things. For example, I'm not sure how to check if a key is empty, so all I could
+do was check it had its value. This isn't the best method as perhaps we don't care as much what the value is but rather that it just has one. There are a few examples like this in the code that
+I could improve on. 
