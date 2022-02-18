@@ -1,0 +1,20 @@
+The first test I attempted was the front end part of the testing. I had no experience in Cypress before this, so I spent the first couple hours watching videos and reading documentation,
+as well as trying to complete the easier steps of the testing, such as visting the website and checking visibility on things. First problem I had was that the tests would not run unless the 
+cookie permissions was closed. Originally I was manually closing it until I realised I could just make Cypress click the Accept Cookies button. 
+
+I realise many types of code in this particular test are perhaps the wrong way to go about things. For example, the buttons. "cy.contains("Continue").click()" is bad practice because it is 
+possible that there would be many types of buttons that said continue and it would make it difficult to choose the correct one. It makes more sense to be more specific, and call the button based
+on something more unique. However, given the limited time I could not figure out a better working method, as I felt pressured to come up with a working test sooner rather than later. 
+
+Another area I could have improved on is the test that checks if the name used in the title is the same name used in the name field. As I am writing both, it is easy for me to just use the same
+name for both tests. But I imagine there is a better way to go about this by only needing to specify the name used once and then being able to use that name again without typing it, similar to 
+saving user input. 
+
+My workflow consisted of asking a question into google like, "Cypress check h3", or "Cypress type input" and then reading the official documentation/answers from stackoverflow and testing new 
+code to see if it would work. 
+
+I'm very sure that there is many mistakes in the code, or many bad habits, but as I gain more experience with Cypress and learn the right and wrong ways to do things the mistakes would lessen 
+with time. Something I wasn't too sure on was if it was better to make multiple "it" blocks and have my tests spread out, or to have all my tests in one "it" block.
+
+Overall I found this part of the test quite enjoyable actually. I found it super cool to see all the forms being filled out very fast, like as if a robot had done it or something. It was fun yet
+still challenging and satisfying when my code worked as I wanted it to. 
